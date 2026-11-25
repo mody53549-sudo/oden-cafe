@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ODEN CAFÉ</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <a href="#home" class="logo">ODEN <span>CAFÉ</span></a>
+
+  <nav>
+    <a href="#menu">MENU</a>
+    <a href="#story">OUR STORY</a>
+    <a href="#visit">VISIT</a>
+    <a href="#reservation" class="nav-book">BOOK A TABLE</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <span class="hero-label">COFFEE · COMFORT · CONNECTION</span>
+    <h1>A slower<br>kind of living.</h1>
+    <p>Good coffee, warm spaces, and moments worth staying for.</p>
+    <a href="#menu" class="hero-button">EXPLORE OUR MENU ↗</a>
+  </div>
+
+  <div class="hero-image">
+    <img src="images/hero.jpg" alt="Oden Cafe atmosphere">
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story-section" id="story">
+  <div class="story-image">
+    <img src="images/story.jpg" alt="Coffee and cafe details">
+  </div>
+
+  <div class="story-content">
+    <span class="section-label">OUR STORY</span>
+    <h2>Made for moments<br>that matter.</h2>
+    <p>
+      Some places are made for a quick coffee.
+      Others are made for staying a little longer.
+      At ODEN, we believe in good coffee, thoughtful details,
+      and the beauty of slowing down.
+    </p>
+    <a href="#visit" class="text-link">COME FIND US ↗</a>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu-section" id="menu">
+  <div class="menu-header">
+    <span class="section-label">A TASTE OF ODEN</span>
+    <h2>Made to be enjoyed.</h2>
+    <p>A few of our favorites, made with care.</p>
+  </div>
+
+  <div class="menu-grid">
+    <div class="menu-card">
+      <img src="images/drink1.jpg" alt="Coffee">
+      <div class="menu-card-info">
+        <h3>Signature Coffee</h3>
+        <p>Rich, smooth and made just right.</p>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/drink2.jpg" alt="Specialty drink">
+      <div class="menu-card-info">
+        <h3>Slow Moments</h3>
+        <p>Your favorite drink, your own little moment.</p>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/drink3.jpg" alt="Cafe dessert and coffee">
+      <div class="menu-card-info">
+        <h3>Something Sweet</h3>
+        <p>A little sweetness to make the day better.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE SPACE -->
+<section class="space-section" id="space">
+  <div class="space-heading">
+    <span class="section-label">THE SPACE</span>
+    <h2>Stay a little longer.</h2>
+  </div>
+
+  <div class="space-gallery">
+    <div class="space-photo">
+      <img src="images/space1.jpg" alt="Cafe interior">
+    </div>
+    <div class="space-photo">
+      <img src="images/space2.jpg" alt="Cafe seating">
+    </div>
+    <div class="space-photo">
+      <img src="images/space3.jpg" alt="Cafe atmosphere">
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS SLIDER -->
+<section class="reviews-section" id="reviews">
+  <div class="reviews-header">
+    <span class="reviews-label">KIND WORDS</span>
+    <h2>A little love<br>from our guests.</h2>
+    <p class="reviews-subtitle">The moments that make what we do worthwhile.</p>
+  </div>
+
+  <div class="reviews-slider">
+    <div class="reviews-track" id="reviewsTrack">
+
+      <article class="review-slide active">
+        <span class="review-stars">★★★★★</span>
+        <p class="review-quote">
+          "Such a beautiful place to slow down.
+          The coffee, the atmosphere, everything feels just right."
+        </p>
+        <span class="review-name">Sarah M.</span>
+      </article>
+
+      <article class="review-slide">
+        <span class="review-stars">★★★★★</span>
+        <p class="review-quote">
+          "One of those places you come for coffee
+          and end up staying for hours."
+        </p>
+        <span class="review-name">Omar K.</span>
+      </article>
+
+      <article class="review-slide">
+        <span class="review-stars">★★★★★</span>
+        <p class="review-quote">
+          "Lovely details, great coffee, and such a welcoming atmosphere.
+          Definitely coming back."
+        </p>
+        <span class="review-name">Nour A.</span>
+      </article>
+
+    </div>
+
+    <div class="reviews-controls">
+      <button class="review-arrow" id="reviewPrev" aria-label="Previous review">←</button>
+
+      <div class="reviews-counter">
+        <span id="reviewCurrent">01</span>
+        <span class="review-counter-line"></span>
+        <span>03</span>
+      </div>
+
+      <button class="review-arrow" id="reviewNext" aria-label="Next review">→</button>
+    </div>
+
+    <p class="reviews-demo-note">SAMPLE REVIEWS — DEMO WEBSITE</p>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="visit-section" id="visit">
+  <div class="visit-content">
+    <span class="section-label">YOUR NEXT FAVORITE PLACE</span>
+    <h2>There's a place<br>for you here.</h2>
+    <p>Whether it's your morning ritual, an afternoon catch-up, or a moment to yourself.</p>
+    <a href="#reservation" class="text-link">SAVE YOUR SEAT ↗</a>
+  </div>
+
+  <div class="visit-image">
+    <img src="images/visit.jpg" alt="Visit Oden Cafe">
+  </div>
+</section>
+
+<!-- RESERVATION -->
+<section class="reservation-section" id="reservation">
+  <div class="reservation-heading">
+    <span class="section-label">MAKE IT A MOMENT</span>
+    <h2>Save your seat.</h2>
+    <p>Planning a visit? We'd love to have you.</p>
+  </div>
+
+  <div class="reservation-form-wrap">
+    <form id="reservationForm">
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="bookingName">YOUR NAME</label>
+          <input type="text" id="bookingName" placeholder="Full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="bookingPhone">PHONE NUMBER</label>
+          <input type="tel" id="bookingPhone" placeholder="Your phone number" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="bookingDate">DATE</label>
+          <input type="date" id="bookingDate" required>
+        </div>
+
+        <div class="form-group">
+          <label for="bookingTime">TIME</label>
+          <select id="bookingTime" required>
+            <option value="">Select a time</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>12:00 PM</option>
+            <option>01:00 PM</option>
+            <option>02:00 PM</option>
+            <option>03:00 PM</option>
+            <option>04:00 PM</option>
+            <option>05:00 PM</option>
+            <option>06:00 PM</option>
+            <option>07:00 PM</option>
+            <option>08:00 PM</option>
+            <option>09:00 PM</option>
+            <option>10:00 PM</option>
+            <option>11:00 PM</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="bookingGuests">NUMBER OF GUESTS</label>
+        <select id="bookingGuests" required>
+          <option value="">Select guests</option>
+          <option>1 Guest</option>
+          <option>2 Guests</option>
+          <option>3 Guests</option>
+          <option>4 Guests</option>
+          <option>5 Guests</option>
+          <option>6 Guests</option>
+          <option>7 Guests</option>
+          <option>8+ Guests</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="bookingNotes">SPECIAL REQUESTS (OPTIONAL)</label>
+        <textarea id="bookingNotes" placeholder="Anything we should know?"></textarea>
+      </div>
+
+      <button type="submit" class="reservation-submit">
+        REQUEST A RESERVATION ↗
+      </button>
+
+    </form>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location-section" id="location">
+  <div class="location-heading">
+    <span class="section-label">FIND YOUR WAY</span>
+    <h2>Come find us.</h2>
+    <p>Good coffee is closer than you think.</p>
+  </div>
+
+  <div class="location-content">
+    <div class="location-details">
+      <div class="location-item">
+        <span class="location-label">OUR LOCATION</span>
+        <h3>New Cairo, Egypt</h3>
+        <p>Come by for coffee, stay for the atmosphere.</p>
+      </div>
+
+      <div class="location-item">
+        <span class="location-label">GET DIRECTIONS</span>
+        <a class="location-link" href="https://www.google.com/maps/search/?api=1&query=Oden+Cafe+New+Cairo" target="_blank" rel="noopener">
+          OPEN IN GOOGLE MAPS ↗
+        </a>
+      </div>
+    </div>
+
+    <div class="location-map">
+      <iframe
+        src="https://maps.google.com/maps?q=New%20Cairo%2C%20Egypt&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="ODEN Cafe Location Map">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- OPENING HOURS -->
+<section class="hours-section" id="hours">
+  <div class="hours-inner">
+    <span class="section-label">WHEN TO VISIT</span>
+    <h2>Our hours.</h2>
+
+    <div class="hours-list">
+      <div class="hours-row">
+        <span>Saturday — Thursday</span>
+        <span>10 AM — 12 AM</span>
+      </div>
+      <div class="hours-row">
+        <span>Friday</span>
+        <span>1 PM — 12 AM</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <a href="#home" class="footer-logo">ODEN <span>CAFÉ</span></a>
+    <p>A slower kind of living.</p>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 ODEN CAFÉ</span>
+    <div class="footer-links">
+      <a href="#menu">MENU</a>
+      <a href="#visit">VISIT</a>
+      <a href="#reservation">RESERVATIONS</a>
+      <a href="#location">LOCATION</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
